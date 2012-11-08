@@ -71,6 +71,30 @@ public class MainActivity extends SherlockFragmentActivity {
         indicator.setViewPager(pager, 0);
 	}
 	
+	public void onDestroy() {
+		if (BoardFragment.player != null &&
+				BoardFragment.player.isPlaying()) {
+			BoardFragment.player.stop();
+		}
+		super.onDestroy();
+	}
+	
+	public void onStop() {
+		if (BoardFragment.player != null &&
+				BoardFragment.player.isPlaying()) {
+			BoardFragment.player.stop();
+		}
+		super.onStop();
+	}
+	
+	public void onPause() {
+		if (BoardFragment.player != null &&
+				BoardFragment.player.isPlaying()) {
+			BoardFragment.player.stop();
+		}
+		super.onPause();
+	}
+	
 	public class ExamplePagerAdapter extends FragmentPagerAdapter {
 
 		public ExamplePagerAdapter(FragmentManager fm) {
