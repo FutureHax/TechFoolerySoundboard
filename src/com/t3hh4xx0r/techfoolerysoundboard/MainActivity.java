@@ -59,7 +59,8 @@ public class MainActivity extends SherlockFragmentActivity {
 
 			@Override
 			public void onPageScrolled(int arg0, float arg1, int arg2) {	
-				if (BoardFragment.player.isPlaying()) {
+				if (BoardFragment.player != null &&
+						BoardFragment.player.isPlaying()) {
 					BoardFragment.player.stop();
 				}
 			}

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent" xmlns:app1="http://schemas.android.com/apk/res/com.t3hh4xx0r.techfoolerysoundboard">
 
     <com.viewpagerindicator.TitlePageIndicator
         android:id="@+id/indicator"
@@ -12,11 +12,8 @@
         android:layout_width="fill_parent"
         android:background="#18FF0000"
         android:textColor="#AA000000"
-        app:footerColor="#FFAA2222"
-        app:footerLineHeight="1dp"
-        app:footerIndicatorHeight="3dp"
-        app:footerIndicatorStyle="underline"
-        app:selectedColor="#FF000000"
+
+        app:selectedColor="#FFffffff"
         app:selectedBold="true"
         />
     
